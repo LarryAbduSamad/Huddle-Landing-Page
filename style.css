@@ -271,6 +271,7 @@ button:hover {
     .header {
         padding: 20px 50px;
     }
+
     .hero-section,
     .flowing-conversations {
         display: flex;
@@ -292,6 +293,8 @@ button:hover {
         flex-direction: row-reverse;
         text-align: left;
         gap: 30px;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -300,6 +303,8 @@ button:hover {
         flex-direction: row-reverse;
         text-align: left;
         gap: 50px;
+        justify-content: center;
+        align-items: center;
     }
 
     .text h1 {
@@ -355,6 +360,11 @@ button:hover {
         position: absolute;
         right: 40px;
         margin-top: 320px; 
+    }
+
+    img {
+        width: 50%;
+        display: block;
     }
 
 
