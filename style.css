@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 img {
     width: 100%;
     display: block;
@@ -51,6 +55,7 @@ body {
     font-weight: 400;
     font-family: var(--ff-poppins);
     box-shadow: 1px 5px 10px rgba(0,0,0,.2);
+    background-color: white;
 }
 
 .hero-section {
@@ -185,7 +190,7 @@ body {
 .footer {
     background-color: var(--clr-neutral-very-dark-cyan);
     margin-top: 30px;
-    color: white;
+    color: var(--clr-neutral-grayish-blue);
     padding-bottom: 40px;
 }
 
@@ -214,7 +219,7 @@ body {
     margin-top: 30px;
 }
 .footer-container .navigation a {
-    color: white;
+    color: var(--clr-neutral-grayish-blue);
 }
 
 .socials  {
@@ -232,13 +237,34 @@ body {
     color: white;
 }
 
+
 .socials a i {
-    color: white;
+    color: var(--clr-neutral-grayish-blue);
+}
+
+.socials a:hover,
+.socials a:focus-within,
+.socials i:hover,
+.socials i:focus-within {
+    color: var(--clr-primary-pink);
 }
 
 .footer p {
     font-size: 10px;
 }
+
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.navigation li:hover,
+.navigation li:focus {
+    text-decoration: underline;
+
+}
+
+
 
 @media (min-width: 60em) {
 
@@ -257,7 +283,7 @@ body {
     .hero-section img {
         margin-right: 20px;
         height: 450px;
-        width: 400px;
+        width: 450px;
         background-image: url(images/bg-hero-desktop.svg);
     }
 
@@ -289,7 +315,7 @@ body {
     }
 
     .call-to-action {
-        width: 50%;
+        width: 40%;
         padding: 60px;
     }
 
